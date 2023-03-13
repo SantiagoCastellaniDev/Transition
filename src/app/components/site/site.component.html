@@ -1,0 +1,44 @@
+<!---NavBar--->
+<nav id="navbar" class="navbar navbar-expand-lg" [ngStyle]="{'background-color':light==true?'white':'black'}">
+    <div class="container-fluid" [ngStyle]="{'color':light==true?'black':'white'}">
+      <a class="navbar-brand" href="#" [ngStyle]="{'color':light==true?'black':'white'}">Transition</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list" [ngStyle]="{'color':light==true?'black':'white'}"></i><!-----
+        <span class="navbar-toggler-icon" [ngStyle]="{'color':light==true?'black':'white'}"></span>--->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" [ngStyle]="{'color':light==true?'black':'white'}">Plan de Acción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [ngStyle]="{'color':light==true?'black':'white'}">Cuerpo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [ngStyle]="{'color':light==true?'black':'white'}">Mente</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [ngStyle]="{'color':light==true?'black':'white'}">Espíritu</a>
+          </li>
+        </ul>
+        <div id="dark-light-mode">
+          <button *ngIf="light==false" class="btn-mode sun" (click)="light=true"><i class="bi bi-sun-fill"></i></button>
+          <button *ngIf="light==true" class="btn-mode moon" (click)="light=false"><i class="bi bi-moon-fill"></i></button>
+        </div>
+      </div>
+    </div>
+</nav>
+<!---Section--->
+<section id="intermed" [ngStyle]="{'background-color':light==true?'white':'black','color':light==true?'black':'white'}">
+    <router-outlet></router-outlet>
+</section>
+
+<!---Footer--->
+<footer [ngStyle]="{'background-color':light==true?'white':'black','color':light==true?'black':'white'}">
+    <div class="text-center p-4">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://santiagocastellani-dev.vercel.app/portfolio" target="black">SC.dev</a>
+        <span id="invita">Si quieres colaborar con el desarrollo de esta página, puedes hacerlo <i class="bi bi-arrow-right"></i></span>        
+        <a href="https://cafecito.app/sc-dev" target="blanck">  Aquí <i id="corazon" class="bi bi-heart-fill"></i></a>
+    </div>        
+</footer>

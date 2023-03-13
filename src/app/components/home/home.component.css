@@ -1,0 +1,65 @@
+#home {
+  text-align: center;
+  height:100vh;
+}
+#img-home {
+  height:100vh;
+}
+.titulo {
+  text-align: center;
+  position:relative;
+  top:-95vh
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size:4rem;
+  color:rgb(255, 255, 0);
+}
+.mensaje {
+  text-align: center;
+  position:relative;
+  top:-90vh;
+  width:60%;
+  text-align:center;
+  border:1px solid red;
+  padding:20px 20px 5px;
+  background-color:rgba(241, 215, 183, 0.75);
+  margin:0 auto;
+  color:black;
+  font-weight: bolder;
+  border-radius:10px;
+}
+.next {
+  background: transparent;
+  border:none;
+  font-size: 35px;
+  color:green;
+  opacity: 0;
+  animation: mi-animacion 1s ease infinite;
+  margin:0 auto
+}
+
+@keyframes mi-animacion {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .mensaje {
+    width:90%;
+    margin:0 auto;
+    font-size:1rem
+  }
+  h1 {
+    margin-bottom:0
+  }
+  #mensaje {
+    font-size:0.8rem;
+  }
+
+}

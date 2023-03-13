@@ -1,0 +1,51 @@
+/*----------NavBar------------*/
+#navbar {
+    border-bottom:1px solid rgb(186, 182, 182);
+    min-height: 80px;
+    position:sticky
+}
+.navbar-brand {
+    margin-left:15px;
+    font-family: 'Dancing Script', cursive;
+    font-size:1.5rem
+}
+.nav-link {
+    margin-left:50px
+}
+
+/*----------Dark Mode---------*/
+
+.btn-mode {   
+    font-size: 30px;
+    margin:5px 50px 0px;
+    background:transparent;
+    border: none;
+    padding:0
+}
+.sun {
+    color:yellow;
+}
+.moon {
+    color:orangered
+}
+
+/*----------Sections----------*/
+#intermed {
+    height: max-content;
+}
+
+/*-----------Footer-----------*/
+#invita {
+    margin-left:12px
+}
+footer a {
+    text-decoration: none;
+}
+footer {
+    border-top:1px solid gray
+}
+#corazon {
+    color:red;
+    font-size: 20px;
+    vertical-align: -0.08em;
+}
