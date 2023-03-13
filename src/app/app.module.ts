@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SiteComponent } from './components/site/site.component';
+import { AccionComponent } from './components/accion/accion.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SiteComponent } from './components/site/site.component';
     HomeComponent,
     NavComponent,
     FooterComponent,
-    SiteComponent
+    SiteComponent,
+    AccionComponent
   ],
   imports: [
     BrowserModule,
